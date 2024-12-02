@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/chat_screen.dart';
-import 'screens/recovery_screen.dart';
+import 'screens/api.dart';
+import 'screens/apiones.dart';
 
 void main() {
   runApp(ChatBotV4App());
@@ -74,19 +74,19 @@ class MainScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ChatScreen()),
+                  MaterialPageRoute(builder: (context) => APIfeed()),
                 );
               },
-              child: Text('Ir a Chat'),
+              child: Text('Ir a todos los contactos'),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => RecoveryScreen()),
+                  MaterialPageRoute(builder: (context) => APIones()),
                 );
               },
-              child: Text('Ir a Recuperación'),
+              child: Text('Ir a contactos individuales'),
             ),
           ],
         ),
