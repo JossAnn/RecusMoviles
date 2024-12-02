@@ -12,9 +12,8 @@ class _APIfeedState extends State<APIfeed> {
   bool isLoading = true; // Estado para controlar si los datos están cargando
 
   // URL de la API (modifica según la IP/puerto donde corras tu servidor Flask)
-  final String apiUrl = "http://127.0.0.1:5000/api/usuarios";
-  //final String apiUrl = "http://10.0.2.2:5000/api/usuarios";
-  //final String apiUrl = "http://192.168.1.78:5000/api/usuarios";
+  //final String apiUrl = "http://127.0.0.1:5000/api/usuarios";
+  final String apiUrl = "http://10.0.2.2:5000/api/usuarios";
 
   @override
   void initState() {
